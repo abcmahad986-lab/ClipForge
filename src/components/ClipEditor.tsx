@@ -433,7 +433,7 @@ export default function ClipEditor({
                 className={`flex-1 flex items-center justify-center gap-1.5 py-3.5 text-xs font-medium transition-all ${
                   activeTab === tab.id
                     ? 'text-primary-light border-b-2 border-primary bg-primary/5'
-                    : 'text-text-muted hover:text-white hover:bg-white/3'
+                    : 'text-text-muted hover:text-white hover:bg-white/5'
                 }`}
               >
                 {tab.icon}
@@ -667,7 +667,7 @@ export default function ClipEditor({
                 </div>
 
                 {/* AI Tip */}
-                <div className="p-3.5 rounded-xl bg-accent/8 border border-accent/15">
+                <div className="p-3.5 rounded-xl bg-accent/10 border border-accent/15">
                   <div className="flex gap-2.5">
                     <Wand2 className="w-4 h-4 text-accent shrink-0 mt-0.5" />
                     <p className="text-xs text-accent/90 leading-relaxed">

@@ -19,10 +19,12 @@ function App() {
   const [exportBatch, setExportBatch] = useState(false);
 
   const handleUrlSubmit = useCallback((url: string) => {
+    console.log('Starting clip analysis for URL:', url);
     setVideoUrl(url);
     setScreen('analyzing');
     
     setTimeout(() => {
+      console.log('Analysis complete, showing editor');
       const mockVideoInfo: VideoInfo = {
         id: '1',
         title: 'The Ultimate Guide to Productivity - 2 Hour Masterclass',

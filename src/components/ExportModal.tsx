@@ -219,7 +219,7 @@ export default function ExportModal({ clip, clips, batchMode, onClose, onConfirm
             </div>
 
             {/* No Watermark Notice */}
-            <div className="p-4 rounded-xl bg-success/8 border border-success/15">
+            <div className="p-4 rounded-xl bg-success/10 border border-success/15">
               <div className="flex items-center gap-3">
                 <div className="w-8 h-8 rounded-lg bg-success/15 flex items-center justify-center shrink-0">
                   <CheckCircle2 className="w-4 h-4 text-success" />

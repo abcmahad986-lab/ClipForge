@@ -126,7 +126,7 @@ export default function VideoAnalyzer({ url }: VideoAnalyzerProps) {
                 transition={{ delay: index * 0.1 }}
                 className={`flex items-center gap-4 px-4 py-3 rounded-xl transition-all duration-300 ${
                   index < currentStep
-                    ? 'bg-success/8 border border-success/15'
+                    ? 'bg-success/10 border border-success/15'
                     : index === currentStep
                     ? 'bg-primary/10 border border-primary/20'
                     : 'bg-surface-lighter/30 border border-transparent'
