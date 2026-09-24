@@ -5,6 +5,8 @@ export interface VideoInfo {
   duration: number;
   channel: string;
   url: string;
+  views?: string;
+  uploadDate?: string;
 }
 
 export interface Clip {
@@ -16,18 +18,26 @@ export interface Clip {
   score: number;
   tags: string[];
   thumbnail: string;
+  highlight?: string;
   textOverlay?: string;
-  transition?: 'none' | 'fade' | 'zoom' | 'slide';
-  captionStyle?: 'bold' | 'minimal' | 'karaoke' | 'highlight';
-  cropPosition?: number; // 0-100 horizontal crop position for 9:16
+  transition?: 'none' | 'fade' | 'zoom' | 'slide' | 'glitch';
+  captionStyle?: 'bold' | 'minimal' | 'karaoke' | 'highlight' | 'typewriter';
+  cropPosition?: number;
+  cropZoom?: number;
+  speed?: number;
+  filter?: string;
+  backgroundColor?: string;
+  selected?: boolean;
 }
 
 export interface ExportSettings {
   resolution: '1080x1920' | '720x1280' | '2160x3840';
   fps: 30 | 60;
-  format: 'mp4' | 'webm';
+  format: 'mp4' | 'webm' | 'mov';
   quality: 'high' | 'medium' | 'low';
   addCaptions: boolean;
   addTransitions: boolean;
   backgroundColor: string;
+  autoReframe: boolean;
+  normalizeAudio: boolean;
 }
